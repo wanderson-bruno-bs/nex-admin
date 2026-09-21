@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>NexAdmin</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+
+<body>
+
+    <!--Menu-->
+    <div class="layout">
+        <aside class="sidebar">
+
+            <div class="profile">
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <div class="profile-info">
+                    <h2>Admin Wanderson</h2>
+                    <span>Administrador</span>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <a href="#" id="dashboard-link">
+                    <span class="menu-icon">▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" id="users-link">
+                    <span class="menu-icon">♟</span>
+                    <span>Usuários</span>
+                </a>
+
+                <a href="#" id="reports-link">
+                    <span class="menu-icon">▥</span>
+                    <span>Relatórios</span>
+                </a>
+
+                <a href="#" id="settings-link">
+                    <span class="menu-icon">⚙</span>
+                    <span>Configurações</span>
+                </a>
+            </nav>
+
+        </aside>
+
+        <!--Usuarios-->
+        <main class="main-content">
+            <section id="users-section">
+
+                <div class="page-header">
+
+                    <div class="page-title">
+
+                        <div class="page-icon">
+                            👥
+                        </div>
+
+                        <div>
+                            <h1>Usuários Cadastrados</h1>
+                            <p>Gerencie os usuários cadastrados no sistema.</p>
+                        </div>
+
+                    </div>
+
+                    <button class="btn-primary" id="open-modal">
+                        <span>＋</span>
+                        Adicionar usuário
+                    </button>
+                </div>
+
+                <!--Filtras usuarios-->
+                <div class="users-filters">
+                    <div class="search-box">
+                        <span class="search-icon">⌕</span>
+                        <input type="text" id="search-user" placeholder="Buscar por nome ou e-mail...">
+                    </div>
+
+                    <select id="status-filter">
+                        <option value="Todos">Todos</option>
+                        <option value="Ativo">Ativos</option>
+                        <option value="Inativo">Inativos</option>
+                    </select>
+
+                </div>
+
+                <!--Tabelas de usuarios-->
+                <div class="table-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="users-table-body">
+                            <!--
+                            <tr>
+                                <td>João Silva</td>
+                                <td>joao@email.com</td>
+                                <td>
+                                    <span class="status active-status">Ativo</span>
+                                </td>
+                                <td>
+                                    <button class="btn-action edit-btn">Editar</button>
+                                    <button class="btn-action delete-btn">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Maria Santos</td>
+                                <td>maria@email.com</td>
+                                <td>
+                                    <span class="status inactive-status">Inativo</span>
+                                </td>
+                                <td>
+                                    <button class="btn-action edit-btn">Editar</button>
+                                    <button class="btn-action delete-btn">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Pedro Oliveira</td>
+                                <td>pedro@email.com</td>
+                                <td>
+                                    <span class="status active-status">Ativo</span>
+                                </td>
+                                <td>
+                                    <button class="btn-action edit-btn">Editar</button>
+                                    <button class="btn-action delete-btn">Excluir</button>
+                                </td>
+                            </tr>
+                            <!-->
+                        </tbody>
+                </div>
+                </table>
+
+            </section>
+            <!--Fim usuarios cadastrados-->
+
+            <!--relatorios-->
+            <section id="reports-section">
+
+                <h1>Relatórios</h1>
+
+                <div class="report-cards">
+
+                    <div class="report-card">
+                        <h3>Total de usuários</h3>
+                        <p id="total-users">120</p>
+                    </div>
+
+                    <div class="report-card">
+                        <h3>Usuários ativos</h3>
+                        <p id="active-users">98</p>
+                    </div>
+
+                    <div class="report-card">
+                        <h3>Usuários inativos</h3>
+                        <p id="inactive-users">22</p>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <!--Inicio configuração-->
+            <section id="settings-section">
+
+                <h1>Configurações</h1>
+
+                <div class="settings-card">
+
+                    <h3>Configurações do sistema</h3>
+
+                    <div class="form-group">
+                        <label for="system-name">Nome do sistema</label>
+                        <input type="text" id="system-name" value="Admin-Bruno">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-system">E-mail administrativo</label>
+                        <input type="email" id="email-system" value="admin@email.com">
+                    </div>
+
+                    <button class="btn-primary" id="save-settings">
+                        Salvar configurações
+                    </button>
+                </div>
+
+            </section>
+       
+            <!--Dashboard-->
+            <header class="topbar">
+                <br>
+                <section id="dashboard-section">
+
+                    <h1>Dashboard</h1>
+                    <br>
+
+                    <div class="cards">
+
+                        <div class="card">
+                            <h3>Total de usuários</h3>
+                            <p id="dashboard-total-users">120</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Usuários ativos</h3>
+                            <p id="dashboard-active-users">98</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Novos cadastros</h3>
+                            <p id="dashboard-new-users">15</p>
+                        </div>
+                    </div>
+                </section>
+        </main>
+    </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal" id="user-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Adicionar usuário</h2>
+                <button class="close-modal" id="close-modal">
+                    &times;
+                </button>
+            </div>
+
+            <form id="user-form">
+
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Digite o nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+
+                    <select id="status" required>
+                        <option value="">Selecione</option>
+                        <option value="Ativo">Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary" id="save-user">
+                    Salvar usuário
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
