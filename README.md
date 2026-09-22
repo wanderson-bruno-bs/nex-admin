@@ -110,4 +110,4 @@ Entre as próximas etapas planejadas estão:
 
 Graduado em **Análise e Desenvolvimento de Sistemas** e pós-graduado em **Engenharia de Software**.
 
-Projeto desenvolvido para estudo, prática e composição de portfólio.
+nex-admin-mu.vercel.app
