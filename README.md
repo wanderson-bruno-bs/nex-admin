@@ -1,7 +1,5 @@
 # 🖥️ NexAdmin
 
-HTML5 CSS3 JavaScript 
-
 O **NexAdmin** é um sistema administrativo desenvolvido como projeto de estudo e portfólio, utilizando **HTML, CSS e JavaScript**.
 
 O projeto simula um painel administrativo para gerenciamento de usuários, permitindo realizar cadastros, edições, exclusões, pesquisas e filtros, além de apresentar indicadores atualizados no Dashboard e na área de Relatórios.
