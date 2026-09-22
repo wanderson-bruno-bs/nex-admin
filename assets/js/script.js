@@ -363,3 +363,10 @@ saveSettingsButton.addEventListener("click", function() {
 
     alert("Configurações salvas com sucesso!");
 });
+
+const mobileMenuButton = document.querySelector("#mobile-menu-btn");
+const sidebar = document.querySelector(".sidebar");
+
+mobileMenuButton.addEventListener("click", function() {
+    sidebar.classList.toggle("open");
+});
