@@ -301,6 +301,8 @@ usersLink.addEventListener("click", function (event) {
     settingsSection.style.display = "none";
 
     setActiveLink(usersLink);
+
+    document.querySelector(".sidebar").classList.remove("open");
 });
 
 
@@ -313,6 +315,8 @@ reportsLink.addEventListener("click", function (event) {
     settingsSection.style.display = "none";
 
     setActiveLink(reportsLink);
+
+    sidebar.classList.remove("open");
 });
 
 
@@ -364,9 +368,18 @@ saveSettingsButton.addEventListener("click", function() {
     alert("Configurações salvas com sucesso!");
 });
 
+
+
 const mobileMenuButton = document.querySelector("#mobile-menu-btn");
 const sidebar = document.querySelector(".sidebar");
+const menuLinks = document.querySelectorAll(".menu a");
 
 mobileMenuButton.addEventListener("click", function() {
     sidebar.classList.toggle("open");
+});
+
+menuLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        sidebar.classList.remove("open");
+    });
 });
