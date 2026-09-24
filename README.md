@@ -7,7 +7,7 @@ Projeto que criei para praticar HTML, CSS e JavaScript puro, focado em criar um 
 ### 🔗 Ver o projeto no ar:
 **https://nex-admin-mu.vercel.app**
 
-O que aprendi
+### O que aprendi
 -  Estruturação de layout com CSS Grid e Flexbox
 -  Responsividade (mobile first)
 -  Organização de pastas e componentes
